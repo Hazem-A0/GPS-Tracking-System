@@ -8,6 +8,7 @@
 	
 	
 	int main(){
+		//for double variable to work we adjust function of the startup code in reset handler so please check it out before testing
 		double distance=500.56;   //passed distance for testing
 		UART_Init();
 		GPIO_initPortf();
