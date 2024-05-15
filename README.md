@@ -3,14 +3,24 @@ This is a GPS tracking system program that uses a TIVA c microcontroller to calc
 
 Components used:
 
--TM4C123G LaunchPad.
+    -TM4C123G LaunchPad.
 
--NEO 6M GPS module.
+    -NEO 6M GPS module.
 
 How it works:
 
--The GPS subsystem stores the coordinates of the start point. 
+    -The GPS subsystem stores the coordinates of the start point. 
 
--The destination point is entered into the program as coordinates.
+    -The destination point is entered into the program as coordinates.
 
--After reaching the destination point, the GPS subsystem stores the coordinates of the end point and calculates the total distance that was taken by the user. 
+    -After reaching the destination point, the GPS subsystem stores the coordinates of the end point and calculates the total distance that was taken by the user. 
+
+Gps-Connection:
+
+      -Tx --> Pe4
+      
+      -Rx --> Pe1 
+      
+LCD -Connection:
+
+![image](https://github.com/Hazem-A0/GPS-Tracking-System/assets/109428270/25ff5b1d-4b3e-40a9-95cc-cf3606a2e29f)
