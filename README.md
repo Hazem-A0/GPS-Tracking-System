@@ -24,3 +24,8 @@ Gps-Connection:
 LCD -Connection:
 
 ![image](https://github.com/Hazem-A0/GPS-Tracking-System/assets/109428270/25ff5b1d-4b3e-40a9-95cc-cf3606a2e29f)
+
+Python Code output:
+
+![image](https://github.com/Hazem-A0/GPS-Tracking-System/assets/109428270/6d3a8496-cbc4-4102-b287-6a70ba27bf54)
+
