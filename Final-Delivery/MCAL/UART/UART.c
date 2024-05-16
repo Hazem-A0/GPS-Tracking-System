@@ -24,7 +24,7 @@ unsigned long uartIBRD, uartFBRD,dumyDelay;
 	}
 /////////////////TRANSMIT CHAR///////////////
 void UART0_CharTX( unsigned char ch){				 
- while((UART0_FR_R&0x02) != 0){}
+ while((UART0_FR_R&0x020) != 0){}//update
  UART0_DR_R = ch; 
 
 			 }
@@ -75,7 +75,7 @@ void UART5_Init( unsigned long  baudrate ){
 	}
 /////////////////TRANSMIT CHAR///////////////
 void UART5_CharTX( unsigned char ch){				 
- while((UART5_FR_R&0x02) != 0){}
+ while((UART5_FR_R&0x020) != 0){} //updated
  UART5_DR_R = ch; 
 
 			 }
@@ -125,7 +125,7 @@ void UART2_Init( unsigned long  baudrate ){
 
 }
 void UART2_CharTX( unsigned char ch){
-	while((UART2_FR_R&0x02) != 0){}
+	while((UART2_FR_R&0x020) != 0){}//updated
 	UART2_DR_R = ch; 
 
 }
@@ -175,7 +175,7 @@ void UART7_Init( unsigned long  baudrate ){
 	GPIO_PORTE_PCTL_R |= 0x00000011;
 }
 void UART7_CharTX( unsigned char ch){
- while((UART7_FR_R&0x02) != 0){}
+ while((UART7_FR_R&0x020) != 0){}//updated
 	 UART7_DR_R = ch; 
 }
 unsigned char UART7_CharRX(){
