@@ -179,10 +179,3 @@ double convertDMtoDD(double coordinate) {
     return decimalDegrees;
 }
 
-double convertDMMtoDD(double coordinate) {
-    int degrees = (int)(coordinate / 100);
-    double minutes = coordinate - degrees * 100;
-    double decimalDegrees = degrees + minutes / 60.0;
-
-    return decimalDegrees;
-}
