@@ -8,7 +8,7 @@ ser = serial.Serial("COM10", 9600, timeout=1)  # Change 'COM3' to your UART port
 file_name = "Coordinates.txt"
 open("coordinates.txt", "w").close()  # clearing the file
 # Main loop
-char_to_send = input("Enter U to receive the date in EEPROM: ")
+char_to_send = input("Enter U to receive the date ")
 
 # Send the character
 ser.write(char_to_send.encode())
